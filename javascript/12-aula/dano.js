@@ -77,26 +77,3 @@ alert(
     pontoDeVidaPoisAtaque +
     " Pontos de Vida"
 );
-
-// alert("Dois Personagens Super Poderosos Entraram em Uma Grande Batalha, Onde a Cada Ataque do " + attacker + " Causava " + damageCaused);
-
-//  oooooooooooooooooooooooooooooo
-// const atacante = prompt("Qual é o nome do personagem que esta atacando? ");
-// const poderDeAtaque = parseFloat(prompt("Qual é o seu poder de ataque? "));
-
-// const defensor = prompt("Qual é o nome do personagem que esta defendendo? ");
-// let pontosDeVida = parseFloat(
-//   prompt("Quantos de vida esse personagem possui? ")
-// );
-// const poderDeDefesa = parseFloat(prompt("Qual é o seu poder de defesa? "));
-// const possuiEscudo = prompt("Ele possui algum escudo? (Sim/Não) ");
-
-// let danoCausado = 0;
-
-// if (poderDeAtaque > poderDeDefesa && possuiEscudo == "Não") {
-//   danoCausado = poderDeAtaque - poderDeDefesa;
-// } else if (poderDeAtaque > poderDeDefesa && possuiEscudo == "Sim") {
-//   danoCausado = (poderDeAtaque - poderDeDefesa) / 2;
-// }
-
-// pontosDeVida -= danoCausado;
