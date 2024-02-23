@@ -27,10 +27,10 @@ do {
     case "3":
       alert("Saindo...");
       break;
+    default:
+      alert("Opção invalida");
   }
 } while (opcoes !== "3");
-
-alert("Saindo...");
 
 // Essa codigo aqui em baixo foi feito pelo chat gpt
 

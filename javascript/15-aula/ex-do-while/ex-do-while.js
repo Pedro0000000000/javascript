@@ -6,7 +6,7 @@ let opcoess = prompt(
     "\nOpção 2" +
     "\nOpção 3" +
     "\nOpção 4" +
-    "\nOpção 5"
+    "\nOpção 5 encerar"
 );
 do {
   alert("Opção escolida: " + opcoess + "\n");
@@ -16,9 +16,10 @@ do {
       "\nOpção 2" +
       "\nOpção 3" +
       "\nOpção 4" +
-      "\nOpção 5" +
+      "\nOpção 5 tem certeza que deseja encerrar?" +
       "\nEscolha outras opções: "
   );
+
   opcoess = opcoeess;
 } while (opcoess < opcoes);
 
