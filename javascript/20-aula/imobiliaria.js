@@ -80,3 +80,95 @@ do {
       alert("Opção inválida, tente novamente.");
   }
 } while (opcoes !== "3");
+
+// const imoveis = [];
+// let opcoes = "";
+
+// do {
+//   opcoes = prompt(
+//     "Bem-vindo(a) ao Cadastro de Imoveis\n" +
+//       "Imoveis cadastrados: " +
+//       imoveis.length +
+//       "\nEscolha umas das opções abaixo:\n" +
+//       "\n1. Novo imovel.\n2. Imoveis Cadastrados.\n3. Sair. "
+//   );
+
+//   switch (opcoes) {
+//     case "1":
+//       const imovel = {};
+
+//       imovel.proprietario = prompt(
+//         "Informe o Nome do Proprietario Desse Imovel:"
+//       );
+//       imovel.quartos = prompt("Informe a Quantdade de Quartos Desse Imovel:");
+//       imovel.banheiro = prompt(
+//         "Informe a Quantidade de Banheiro Desse Imovel:"
+//       );
+//       imovel.garagem = prompt("Esse imovel Possue Garagem? (Sim/Não)");
+//       // imovel.garagem.vaga = 0;
+
+//       if (imoveis.garagem === "Sim") {
+//         imovel.garagem.vaga = prompt(
+//           "Quantas Vagas na Garagem Esse Imovel Possui?"
+//         );
+//       } // else {
+//       //   alert(imovel.garagem.vaga);
+//       // }
+
+//       const confirmacao = confirm(
+//         "Salvar Este imovel?\n" +
+//           "\nPriprietario: " +
+//           imovel.proprietario +
+//           "\nQuarto(s): " +
+//           imovel.quartos +
+//           "\nBanheiro(s): " +
+//           imovel.banheiro +
+//           "\nGaragem(s): " +
+//           imovel.garagem +
+//           "\nVag(s): " +
+//           imovel.garagem.vaga
+//       );
+
+//       if (confirmacao) {
+//         imoveis.push(imovel);
+//       }
+//       break;
+//     case "2":
+//       for (let i = 0; i < imoveis.length; i++) {
+//         if (imovel.garagem === "Sim") {
+//           alert(
+//             "Imovel " +
+//               (i + 1) +
+//               "\nProprietario: " +
+//               imoveis[i].proprietario +
+//               "\nQuarto(s): " +
+//               imoveis[i].quartos +
+//               "\nBanheiro(s): " +
+//               imoveis[i].banheiro +
+//               "\nGaragem: " +
+//               imovel[i].garagem +
+//               " Vaga(s): " +
+//               imovel[i].garagem.vaga
+//           );
+//         } else {
+//           alert(
+//             "Imovel " +
+//               (i + 1) +
+//               "\nProprietario: " +
+//               imoveis[i].proprietario +
+//               "\nQuarto(s): " +
+//               imoveis[i].quartos +
+//               "\nBanheiro(s): " +
+//               imoveis[i].banheiro +
+//               "\nGaragem: Não"
+//           );
+//         }
+//       }
+//       break;
+//     case "3":
+//       alert("Encerrando...");
+//       break;
+//     default:
+//       alert("Opção imvalda.");
+//   }
+// } while (opcoes !== "3");
