@@ -42,21 +42,41 @@
 // }
 // cadastro("Pedro Henrique", "19", "pedro@gmail.com", "usuario");
 
+// function cadastrarUsuario(usuario) {
+//   // Aqui você pode implementar lógica para realmente cadastrar o usuário em algum lugar
+//   console.log("Cadastrando usuário:", usuario.nome);
+//   console.log("Idade:", usuario.idade);
+//   console.log("Email:", usuario.email);
+//   console.log("Senha:", usuario.senha);
+//   console.log("Cidade:", usuario.cidade);
+// }
+
+// const dadosDoUsuario = {
+//   nome: "Pedro Henrique",
+//   idade: 19, // Idade como número, não string
+//   email: "pedro@gmail.com",
+//   senha: "123",
+//   cidade: "Logo Ali",
+// };
+
+cadastrarUsuario(dadosDoUsuario);
+
 function cadastrarUsuario(usuario) {
-  // Aqui você pode implementar lógica para realmente cadastrar o usuário em algum lugar
   console.log("Cadastrando usuário:", usuario.nome);
-  console.log("Idade:", usuario.idade);
-  console.log("Email:", usuario.email);
-  console.log("Senha:", usuario.senha);
-  console.log("Cidade:", usuario.cidade);
+  console.log("Idade:", usuario.nome.idade);
+  console.log("Email:", usuario.nome.email);
+  console.log("Senha:", usuario.nome.senha);
+  console.log("Cidade:", usuario.nome.cidade);
 }
 
 const dadosDoUsuario = {
-  nome: "Pedro Henrique",
-  idade: 19, // Idade como número, não string
-  email: "pedro@gmail.com",
-  senha: "123",
-  cidade: "Logo Ali",
+  nome: {
+    nomeCompleto: "Pedro Henrique...",
+    idade: 19,
+    email: "pedro@email",
+    senha: "123321",
+    cidade: "Logo Ali",
+  },
 };
 
 cadastrarUsuario(dadosDoUsuario);
