@@ -7,7 +7,8 @@ const opcoesDeMedidas = prompt(
     "\n3 - Decimetro (dm)" +
     "\n4 - Decâmetro (dam)" +
     "\n5 - Hectrômetros (hm)" +
-    "\n6 - Quilometros (km)"
+    "\n6 - Quilometros (km)" +
+    "\n7 - Todas as opções acima."
 );
 
 switch (opcoesDeMedidas) {
@@ -29,4 +30,37 @@ switch (opcoesDeMedidas) {
   case "6":
     alert("Resultado: " + medida + "m = " + medida / 1000 + "km");
     break;
+  case "7":
+    alert(
+      "Resultado: " +
+        medida +
+        "m = " +
+        medida * 1000 +
+        "mm" +
+        "\nResultado: " +
+        medida +
+        "m = " +
+        medida * 100 +
+        "cm" +
+        "\nResultado: " +
+        medida +
+        "m = " +
+        medida * 10 +
+        "dm" +
+        "\nResultado: " +
+        medida +
+        "m = " +
+        medida / 10 +
+        "dam" +
+        "\nResultado: " +
+        medida +
+        "m = " +
+        medida / 100 +
+        "hm" +
+        "\nResultado: " +
+        medida +
+        "m = " +
+        medida / 1000 +
+        "km"
+    );
 }

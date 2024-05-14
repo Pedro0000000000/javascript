@@ -24,3 +24,22 @@ do {
 } while (opcoess < opcoes);
 
 alert("O sistema esta sendo encerrado:");
+
+let opcao = "";
+
+while (opcao !== "5") {
+  opcao = prompt(
+    "Menu interativo:\n" +
+      "Opção 1\n" +
+      "Opção 2\n" +
+      "Opção 3\n" +
+      "Opção 4\n" +
+      "Opção 5 (para encerrar)"
+  );
+
+  if (opcao !== "5") {
+    alert("Opção escolhida: " + opcao + "\n");
+  }
+}
+
+alert("O sistema está sendo encerrado.");

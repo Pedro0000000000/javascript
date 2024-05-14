@@ -14,8 +14,8 @@ while (velocidade > 0) {
   velocidade -= 20;
   alert("Diminuindo 20 km/h");
 
-  if (velocidade === 40) {
-    alert("O veiculo atingiu a velocidade 40 km/h ");
+  if (velocidade === 0) {
+    alert("O veiculo atingiu 0 km/h\nVeiculo está parado. ");
     break;
   }
 }

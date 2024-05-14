@@ -1,6 +1,8 @@
 // inicialização ; condição ; finalização
 
-let escolha = prompt("Escolha um numero de contagem de 1 a 10: ");
+let escolha = prompt(
+  "Escolha um numero de contagem de 1 a 10:\nLembrando que a contagem vai até o numero que você escolher. "
+);
 let number = 0;
 
 for (number; number <= escolha; number++) {

@@ -30,7 +30,7 @@ const numero = parseFloat(
 );
 
 const tabuada = prompt(
-  "Até que numero você deseja que o " + numero + " deve multiplicar?"
+  "Até que numero você deseja que o " + numero + " deve trabalhar?"
 );
 
 const escolhas = prompt(
