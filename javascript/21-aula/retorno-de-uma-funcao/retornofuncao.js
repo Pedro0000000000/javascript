@@ -3,9 +3,9 @@ function calcularMedia(a, b) {
   return media;
 }
 
-const resultado = calcularMedia(7, 7);
+// const resultado = calcularMedia(7, 7);
 
-console.log(resultado);
+console.log((resultado = calcularMedia(5, 7)));
 
 function produtos(cafe, leite) {
   console.log("Produto Café:", cafe.nomeCafe);
