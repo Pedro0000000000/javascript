@@ -59,27 +59,36 @@
 //   cidade: "Logo Ali",
 // };
 
-cadastrarUsuario(dadosDoUsuario);
-
 function cadastrarUsuario(usuario) {
-  console.log("Cadastrando usuário:", usuario.nome);
+  console.log("Cadastrando usuário:", usuario.nome.nomeCompleto);
   console.log("Idade:", usuario.nome.idade);
   console.log("Email:", usuario.nome.email);
   console.log("Senha:", usuario.nome.senha);
   console.log("Cidade:", usuario.nome.cidade);
 }
 
-const dadosDoUsuario = {
-  nome: {
-    nomeCompleto: "Pedro Henrique...",
-    idade: 19,
-    email: "pedro@email",
-    senha: "123321",
-    cidade: "Logo Ali",
-  },
-};
+function obterDadosDoUsuario() {
+  const nomeCompleto = prompt("Informe Seu Nome Completo:");
+  const idade = parseFloat(prompt("Informe Sua Idade:"));
+  const email = prompt("Informe seu Email:");
+  const senha = prompt("Informe Sua Senha:");
+  const cidade = prompt("Informe Sua Cidade:");
 
+  return {
+    nome: {
+      nomeCompleto: nomeCompleto,
+      idade: idade,
+      email: email,
+      senha: senha,
+      cidade: cidade,
+    },
+  };
+}
+
+const dadosDoUsuario = obterDadosDoUsuario();
 cadastrarUsuario(dadosDoUsuario);
+
+// cadastrarUsuario(dadosDoUsuario);
 
 // function cadastros(usuario) {
 //   usuario.nome;

@@ -1,11 +1,12 @@
 function calcularMedia(a, b) {
   const media = (a + b) / 2;
-  return media;
+  return "A media de " + a + " + " + b + " / 2 " + " = " + media;
 }
 
-// const resultado = calcularMedia(7, 7);
+let valor1 = parseFloat(prompt("Informe o primeiro valor: "));
+let valor2 = parseFloat(prompt("Informe o segundo valor: "));
 
-console.log((resultado = calcularMedia(5, 7)));
+console.log((resultado = calcularMedia(valor1, valor2)));
 
 function produtos(cafe, leite) {
   console.log("Produto Café:", cafe.nomeCafe);
