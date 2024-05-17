@@ -43,7 +43,7 @@ function executar() {
   let opcao = " ";
 
   do {
-    opcao = menu(1);
+    opcao = menu();
     let resultado;
 
     switch (opcao) {

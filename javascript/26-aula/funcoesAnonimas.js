@@ -17,17 +17,21 @@ const b = parseFloat(prompt("Insira outro valor: "));
 
 console.log(subtrair(a, b));
 
-// PERIGO DAS FUNÇÕES ANONIMAS
+// Chamando a função nomeada antes de sua definição
+olaMundo(); // Funciona devido ao hoisting
 
-olaMundo();
-// oiMundo();   // Você só consegue acessar depois que a função for declarada.
+// Tentando chamar a função anônima antes da definição (comentada para evitar erro)
+// oiMundo(); // Causaria um erro se descomentado: Uncaught ReferenceError: Cannot access 'oiMundo' before initialization
 
+// Definição da função nomeada
 function olaMundo() {
   console.log("Olá, Mundo!"); //função Nomeada é jogada lá para o começo do arquivo
 }
 
+// Definição da função anônima atribuída a uma variável
 const oiMundo = function () {
   console.log("Oi, Mundo!"); // já a função anonima ela não é jogada para o começo
 };
 
-oiMundo();
+// Chamando a função anônima após sua definição
+oiMundo(); // Funciona

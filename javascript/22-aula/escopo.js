@@ -7,9 +7,9 @@ function evoluir() {
   console.log(dragon);
   return pokemon;
 }
-let novoPokemon = evoluir();
+// let novoPokemon = evoluir();
 
-console.log(novoPokemon);
+console.log((novoPokemon = evoluir()));
 
 let gato = "Pull";
 function cat() {

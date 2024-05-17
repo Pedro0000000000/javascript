@@ -1,12 +1,15 @@
 function dividir(number) {
   console.log(number);
   if (number % 2 === 0) {
-    dividir(number / 2);
+    return dividir(number / 2); // Captura e retorna o resultado final
   } else {
     return number;
   }
 }
-// dividir(8);
+
+let resultado = parseFloat(prompt("Informe um Valor Qualquer:"));
+let finalResult = dividir(resultado);
+console.log("Resultado final:" + finalResult);
 
 function dobrar(numberr) {
   console.log(numberr);
@@ -14,12 +17,12 @@ function dobrar(numberr) {
     return numberr;
   } else if (numberr < 1000) {
     return dobrar(numberr * 2);
-  } else {
-    return "O numero passou de mil.";
+  } else if (numberr > 1000) {
+    console.log("O numero passou de mil.");
   }
 }
 
-// dobrar(1);
+dobrar(2);
 
 // fatorioal de 5 ==> !5 === 5 * 4 * 3 * 2 * 1 === 5 * !4
 
