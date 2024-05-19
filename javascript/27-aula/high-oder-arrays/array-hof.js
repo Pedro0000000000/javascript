@@ -109,3 +109,40 @@ const raca3 = personagens3.reduce(function (racaAcumulada, racaAtual) {
 }, {});
 console.log(raca3);
 console.log("======   REDUCE   ======");
+
+// SORT
+
+const personagens4 = [
+  { nivel: 42, nome: "Thrall4", raca: "Orc4", classe: "Xamã4" },
+  { nivel: 28, nome: "Garrosh4", raca: "Orc4", classe: "Guerreiro4" },
+  { nivel: 35, nome: "Varok4", raca: "Orc4", classe: "Guerreiro4" },
+  { nivel: 35, nome: "Uther4", raca: "Humano4", classe: "Paladino4" },
+  { nivel: 26, nome: "Jaina4", raca: "Humano4", classe: "Maga4" },
+  {
+    nivel: 39,
+    nome: "Tyrande4",
+    raca: "Elfo Noturno4",
+    classe: "Sacerdotisa4",
+  },
+  { nivel: 29, nome: "Muradin4", raca: "Anão4", classe: "Guerreiro4" },
+];
+
+// NESSE CASO O ARRAY É MODIFICADO PELO .SORT
+personagens4.sort(function (personagemA, personagemB) {
+  // return personagemA.nivel - personagemB.nivel; // ORDEN CRESCENTE
+  return personagemB.nivel - personagemA.nivel; // ORDEN DECRESCENTE
+});
+
+// NESSE CASO NÃO, PORQUE O .SLICE ESTÁ FAZENDO UMA COPIA DO ARRAY
+
+const personagensOrdenados4 = personagens4
+  .slice()
+  .sort(function (personagemA, personagemB) {
+    return personagemA.nivel - personagemB.nivel; // ORDEN CRESCENTE
+    // return personagemB.nivel - personagemA.nivel; // ORDEN DECRESCENTE
+  });
+
+console.log(personagens4);
+console.log(personagensOrdenados4);
+
+console.log("======   SORT   ======");
