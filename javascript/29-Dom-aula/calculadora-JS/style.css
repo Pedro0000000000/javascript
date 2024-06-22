@@ -1,9 +1,11 @@
+/* Resetar margens e paddings padrões */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Variáveis de cores para o tema */
 :root {
   --bg-color: #212529;
   --border-color: #666;
@@ -12,12 +14,14 @@
   --error-color: #ff0043;
 }
 
+/* Estilo do corpo da página */
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
   font-family: "Ubuntu", sans-serif;
 }
 
+/* Estilo do main container */
 main {
   display: block;
   margin: 0 auto;
@@ -26,21 +30,25 @@ main {
   position: relative;
 }
 
+/* Estilo do cabeçalho */
 header {
   padding: 2rem 0;
 }
 
+/* Estilo do botão de troca de tema */
 #themeSwitcher {
   background-color: var(--bg-color);
   border: 0.125rem solid var(--font-color);
   color: var(--font-color);
 }
 
+/* Estilo do botão de troca de tema ao passar o mouse */
 #themeSwitcher:hover {
   background-color: var(--font-color);
   color: var(--bg-color);
 }
 
+/* Estilo dos botões */
 button {
   background-color: var(--primary-color);
   border: none;
@@ -50,6 +58,7 @@ button {
   transition: 0.15s;
 }
 
+/* Estilo dos campos de entrada */
 input {
   background-color: var(--bg-color);
   border: 2px solid var(--border-color);
@@ -63,6 +72,7 @@ input {
   width: 100%;
 }
 
+/* Layout dos botões da calculadora */
 #keys {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr;
@@ -71,6 +81,7 @@ input {
   margin: 2rem 0;
 }
 
+/* Estilo dos botões da calculadora */
 #keys button {
   color: var(--bg-color);
   cursor: pointer;
@@ -78,15 +89,18 @@ input {
   padding: 1rem;
 }
 
+/* Estilo dos botões da calculadora ao passar o mouse */
 #keys button:hover {
   filter: brightness(0.8);
 }
 
+/* Estilo do campo de resultado */
 #result {
   border-width: 2px 2px 2px 0;
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
+/* Estilo do botão de copiar para a área de transferência */
 #copyToClipboard {
   background-color: transparent;
   border: solid var(--border-color);
@@ -99,6 +113,7 @@ input {
   width: 6rem;
 }
 
+/* Classes utilitárias para flexbox */
 .flex {
   display: flex;
 }
@@ -111,6 +126,7 @@ input {
   justify-content: space-between;
 }
 
+/* Classes para estados de erro e sucesso */
 .error {
   background-color: var(--error-color);
 }
