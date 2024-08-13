@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da velha. (Tic-Tac-Toe)</title>
+    <link rel="stylesheet" href="velha.css">
+    <script src="velha.js" defer ></script>
+  </head>
+  <body>
+    <h1>Jogo da velha. (Tic-Tac-Toe)</h1>
+    <hr />
+    <label for="player1">X</label>
+    <input type="text" id="player1" placeholder="Nome do jogador 1:"></input>
+
+    <label for="player2">O</label>
+    <input type="text" id="player2" placeholder="Nome do jogador 2:"></input>
+  
+    <button id="start">Começar</button>
+
+    <h2>Vez de: <span id="turnPlayer"></span></h2>
+
+    <section id="gameBoard">
+      <span class="cursor-pointer" data-region="0.0">P</span>
+      <span class="cursor-pointer" data-region="0.1">E</span>
+      <span class="cursor-pointer" data-region="0.2">D</span>
+
+      <span class="cursor-pointer" data-region="1.0">R</span>
+      <span class="cursor-pointer" data-region="1.1">O</span>
+      <span class="cursor-pointer" data-region="1.2">R</span>
+
+      <span class="cursor-pointer" data-region="2.0">D</span>
+      <span class="cursor-pointer" data-region="2.1">E</span>
+      <span class="cursor-pointer" data-region="2.2">P</span>
+    </section>
+  </body>
+</html>
